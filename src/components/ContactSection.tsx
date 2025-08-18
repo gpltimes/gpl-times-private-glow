@@ -45,7 +45,7 @@ export const ContactSection = () => {
             
             <Button variant="outline" size="lg" className="font-semibold">
               <Mail className="h-5 w-5 mr-2" />
-              support@gpltimes.com
+              info@gpltimes.com
             </Button>
           </CardContent>
         </Card>

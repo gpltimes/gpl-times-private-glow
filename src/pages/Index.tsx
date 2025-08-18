@@ -70,6 +70,18 @@ const Index = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
+              icon={<Users className="h-6 w-6 text-premium" />}
+              title="Exclusive Community"
+              description="Build a trusted network of verified WordPress professionals."
+              badgeText="Premium"
+              items={[
+                "Verified users only",
+                "Professional networking",
+                "Quality-focused discussions"
+              ]}
+            />
+            
+            <FeatureCard
               icon={<Rocket className="h-6 w-6 text-success" />}
               title="Faster Performance"
               description="Optimized servers and reduced load mean lightning-fast browsing."
@@ -88,18 +100,6 @@ const Index = () => {
                 "Reduced abuse and bot traffic",
                 "Unauthorized access prevention",
                 "Stronger security protocols"
-              ]}
-            />
-            
-            <FeatureCard
-              icon={<Users className="h-6 w-6 text-premium" />}
-              title="Exclusive Community"
-              description="Build a trusted network of verified WordPress professionals."
-              badgeText="Premium"
-              items={[
-                "Verified users only",
-                "Professional networking",
-                "Quality-focused discussions"
               ]}
             />
           </div>
