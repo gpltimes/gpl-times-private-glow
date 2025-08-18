@@ -7,19 +7,19 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 213 9% 25%;
+    --foreground: 213 9% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 213 9% 25%;
+    --card-foreground: 213 9% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 213 9% 25%;
+    --popover-foreground: 213 9% 15%;
 
     --primary: 201 76% 43%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 8% 96%;
-    --secondary-foreground: 213 9% 25%;
+    --secondary: 210 8% 97%;
+    --secondary-foreground: 213 9% 15%;
 
     --muted: 210 8% 96%;
     --muted-foreground: 210 8% 46%;
@@ -34,7 +34,7 @@
     --success-foreground: 0 0% 98%;
 
     --warning: 38 92% 50%;
-    --warning-foreground: 213 9% 25%;
+    --warning-foreground: 213 9% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
@@ -43,15 +43,23 @@
     --input: 210 8% 91%;
     --ring: 201 76% 43%;
 
-    /* GPL Times Brand Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(201 76% 43%), hsl(201 76% 53%));
-    --gradient-premium: linear-gradient(135deg, hsl(201 76% 43%), hsl(201 76% 53%));
-    --gradient-hero: linear-gradient(135deg, hsl(213 9% 25%) 0%, hsl(210 8% 23%) 50%, hsl(201 76% 43%) 100%);
+    /* Modern gradients and effects */
+    --gradient-primary: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(201 76% 53%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(201 86% 48%) 50%, hsl(201 96% 53%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 8% 98%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(213 9% 25%) 100%);
     
-    /* Professional shadows with brand colors */
-    --shadow-premium: 0 20px 40px -12px hsl(201 76% 43% / 0.25);
-    --shadow-card: 0 4px 20px -4px hsl(201 76% 43% / 0.1);
-    --shadow-glow: 0 0 40px hsl(201 76% 43% / 0.3);
+    /* Advanced shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(201 76% 43% / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(201 76% 43% / 0.1), 0 2px 4px -2px hsl(201 76% 43% / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(201 76% 43% / 0.1), 0 4px 6px -4px hsl(201 76% 43% / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(201 76% 43% / 0.1), 0 8px 10px -6px hsl(201 76% 43% / 0.1);
+    --shadow-glow: 0 0 40px hsl(201 76% 43% / 0.4);
+    --shadow-premium: 0 25px 50px -12px hsl(201 76% 43% / 0.3);
+    
+    /* Animation variables */
+    --animation-duration: 0.6s;
+    --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
 
     --radius: 0.5rem;
 
