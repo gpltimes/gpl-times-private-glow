@@ -1,5 +1,6 @@
 import { AlertTriangle, CheckCircle, Zap, Lock, Rocket, Shield, Users, Gift, Archive, Clock, Crown, Star, Sparkles } from "lucide-react";
 import { ModernHero } from "@/components/ModernHero";
+import { HeroCTA } from "@/components/HeroCTA";
 import { TimelineSection } from "@/components/TimelineSection";
 import { ModernFeatureCard } from "@/components/ModernFeatureCard";
 import { UrgentCTA } from "@/components/UrgentCTA";
@@ -9,6 +10,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-hidden">
       <ModernHero />
+      <HeroCTA />
       
       {/* What's Changing Section - Modern Cards */}
       <section className="py-24 bg-gradient-to-br from-background via-secondary/20 to-background">

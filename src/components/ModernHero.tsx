@@ -60,24 +60,12 @@ export const ModernHero = () => {
           </div>
           
           {/* Enhanced description with better readability */}
-          <div className="max-w-4xl mx-auto mb-8 md:mb-12">
+          <div className="max-w-4xl mx-auto mb-12 md:mb-16">
             <p className="text-lg md:text-xl text-white/95 leading-relaxed px-4 animate-slide-up">
               Transform your WordPress journey with our exclusive private platform. 
               <span className="hidden md:inline"> Delivering unmatched performance, enterprise-grade security, and premium experiences for serious WordPress professionals.</span>
               <span className="md:hidden"> Get premium performance and security for WordPress professionals.</span>
             </p>
-          </div>
-          
-          {/* Improved CTA buttons with proper spacing from edges */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center animate-slide-up max-w-3xl mx-auto px-8 md:px-16">
-            <Button variant="default" size="lg" className="w-full sm:w-auto sm:max-w-xs text-base md:text-lg px-8 md:px-12 py-4 md:py-5 shadow-xl hover:shadow-glow transition-all duration-300 bg-white text-primary hover:bg-white/90 font-semibold">
-              <Trophy className="h-4 w-4 md:h-5 md:w-5 mr-2" />
-              Join Exclusive Community
-            </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto sm:max-w-xs text-base md:text-lg px-8 md:px-10 py-4 md:py-5">
-              <ArrowDown className="h-4 w-4 md:h-5 md:w-5 mr-2" />
-              <span className="hidden sm:inline">Learn More About </span>Changes
-            </Button>
           </div>
         </div>
       </div>
