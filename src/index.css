@@ -18,13 +18,13 @@
     --primary: 201 76% 43%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 8% 97%;
-    --secondary-foreground: 213 9% 15%;
+    --secondary: 210 9% 22%;
+    --secondary-foreground: 0 0% 98%;
 
     --muted: 210 8% 96%;
     --muted-foreground: 210 8% 46%;
 
-    --accent: 201 76% 43%;
+    --accent: 210 9% 24%;
     --accent-foreground: 0 0% 98%;
 
     --premium: 201 76% 43%;
@@ -45,9 +45,10 @@
 
     /* Modern gradients and effects */
     --gradient-primary: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(201 76% 53%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(201 86% 48%) 50%, hsl(201 96% 53%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(210 9% 22%) 100%);
+    --gradient-secondary: linear-gradient(135deg, hsl(210 9% 22%) 0%, hsl(210 9% 18%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 8% 98%) 100%);
-    --gradient-premium: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(213 9% 25%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(201 76% 43%) 0%, hsl(210 9% 22%) 100%);
     
     /* Advanced shadows */
     --shadow-sm: 0 1px 2px 0 hsl(201 76% 43% / 0.05);

@@ -23,7 +23,7 @@ export const UrgentCTA = () => {
               </div>
             </div>
             
-            <div className="p-12 text-center bg-gradient-card">
+            <div className="p-6 md:p-12 text-center bg-gradient-card">
               <div className="inline-flex items-center justify-center p-4 rounded-full bg-warning/10 mb-8 animate-pulse-glow">
                 <Crown className="h-12 w-12 text-warning" />
               </div>
@@ -66,15 +66,15 @@ export const UrgentCTA = () => {
               </div>
               
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <div className="flex flex-col lg:flex-row gap-4 md:gap-6 justify-center items-center">
                 <Button 
-                  variant="cta" 
+                  variant="default" 
                   size="lg" 
-                  className="text-xl px-12 py-6 shadow-xl hover:shadow-glow transition-all duration-300 animate-pulse-glow"
+                  className="w-full sm:w-auto text-lg md:text-xl px-8 md:px-12 py-4 md:py-6 shadow-xl hover:shadow-glow transition-all duration-300 animate-pulse-glow bg-white text-primary hover:bg-white/90 font-bold"
                 >
-                  <Star className="h-6 w-6 mr-3" />
+                  <Star className="h-5 w-5 md:h-6 md:w-6 mr-2 md:mr-3" />
                   Get Exclusive Access Now
-                  <ArrowRight className="h-6 w-6 ml-3" />
+                  <ArrowRight className="h-5 w-5 md:h-6 md:w-6 ml-2 md:ml-3" />
                 </Button>
                 
                 <div className="text-center">
