@@ -38,7 +38,7 @@ export const ModernHero = () => {
               </div>
             </div>
             
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight">
               <span className="block">GPL Times</span>
               <span className="block bg-gradient-to-r from-white via-white/90 to-white bg-clip-text text-transparent relative">
                 Goes Private
@@ -68,13 +68,13 @@ export const ModernHero = () => {
             </p>
           </div>
           
-          {/* Improved CTA buttons with better mobile layout */}
-          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center animate-slide-up px-4">
-            <Button variant="default" size="lg" className="w-full sm:w-auto text-base md:text-lg px-6 md:px-10 py-3 md:py-4 shadow-xl hover:shadow-glow transition-all duration-300 bg-white text-primary hover:bg-white/90 font-semibold">
+          {/* Improved CTA buttons with better centered layout */}
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center animate-slide-up max-w-2xl mx-auto">
+            <Button variant="default" size="lg" className="w-full sm:w-auto text-base md:text-lg px-8 md:px-12 py-4 md:py-5 shadow-xl hover:shadow-glow transition-all duration-300 bg-white text-primary hover:bg-white/90 font-semibold">
               <Trophy className="h-4 w-4 md:h-5 md:w-5 mr-2" />
               Join Exclusive Community
             </Button>
-            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-base md:text-lg px-6 md:px-8 py-3 md:py-4">
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto text-base md:text-lg px-8 md:px-10 py-4 md:py-5">
               <ArrowDown className="h-4 w-4 md:h-5 md:w-5 mr-2" />
               <span className="hidden sm:inline">Learn More About </span>Changes
             </Button>
