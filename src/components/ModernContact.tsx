@@ -8,10 +8,10 @@ export const ModernContact = () => {
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-6">
-            Need Help With The Transition?
+            Questions About the Changes?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our dedicated team is here to ensure your transition to the private platform is seamless
+            Our support team is here to help you understand what's changing and ensure you maintain access
           </p>
         </div>
         
@@ -56,18 +56,18 @@ export const ModernContact = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Will my existing account work?</h4>
-                  <p className="text-muted-foreground text-sm">Yes, all registered accounts remain active with full access.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Do I need to do anything if I already have an account?</h4>
+                  <p className="text-muted-foreground text-sm">No action needed. Your account will continue working normally.</p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">Can I still make purchases?</h4>
-                  <p className="text-muted-foreground text-sm">Absolutely! All purchasing options remain available for registered users.</p>
+                  <h4 className="font-semibold text-foreground mb-2">What if I don't have an account yet?</h4>
+                  <p className="text-muted-foreground text-sm">Register before December 31, 2025 to secure your access.</p>
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold text-foreground mb-2">What if I register after the deadline?</h4>
-                  <p className="text-muted-foreground text-sm">Registration will only reopen during special events like Black Friday.</p>
+                  <h4 className="font-semibold text-foreground mb-2">Can I still download files after January 1?</h4>
+                  <p className="text-muted-foreground text-sm">Yes, all registered members will have full download access.</p>
                 </div>
               </div>
             </CardContent>
@@ -79,8 +79,8 @@ export const ModernContact = () => {
           <Card className="inline-block shadow-md">
             <CardContent className="p-6">
               <p className="text-muted-foreground mb-2">
-                Thank you for being part of our journey. We're excited to welcome you 
-                to the new, enhanced GPL Times experience.
+                Thank you for being part of the GPL Times community. We're committed to providing 
+                you with the best WordPress resources and support.
               </p>
               <p className="text-foreground font-semibold">— The GPL Times Team</p>
             </CardContent>

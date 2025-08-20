@@ -28,14 +28,14 @@ export const UrgentCTA = () => {
                 <Crown className="h-12 w-12 text-warning" />
               </div>
               
-              <h2 className="text-5xl font-bold text-foreground mb-6">
-                Secure Your
-                <span className="block text-primary">Exclusive Access</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                Register Before
+                <span className="block text-primary">December 31, 2025</span>
               </h2>
               
               <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-                Join thousands of WordPress professionals in the most exclusive GPL community. 
-                After December 31st, 2025, new memberships will only open during rare special events.
+                Don't miss out! Create your account now to ensure continued access to GPL Times. 
+                After December 31st, registration will only be available during special events.
               </p>
               
               {/* Stats Grid */}
@@ -67,7 +67,7 @@ export const UrgentCTA = () => {
               
               {/* CTA Buttons */}
               <div className="flex flex-col lg:flex-row gap-4 md:gap-6 justify-center items-center">
-                <Button 
+                  <Button 
                   variant="cta"
                   size="lg" 
                   className="w-full sm:w-auto text-lg md:text-xl px-10 md:px-14 py-5 md:py-6 shadow-xl hover:shadow-glow transition-all duration-300 font-bold relative overflow-hidden group"
@@ -75,7 +75,7 @@ export const UrgentCTA = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary opacity-100 group-hover:opacity-90 transition-opacity duration-300"></div>
                   <div className="relative flex items-center">
                     <Star className="h-5 w-5 md:h-6 md:w-6 mr-2 md:mr-3 animate-pulse" />
-                    Get Exclusive Access Now
+                    Create Account Now
                     <ArrowRight className="h-5 w-5 md:h-6 md:w-6 ml-2 md:ml-3" />
                   </div>
                 </Button>

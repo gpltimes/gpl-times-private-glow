@@ -4,28 +4,28 @@ import { Card, CardContent } from "@/components/ui/card";
 export const TimelineSection = () => {
   const timelineItems = [
     {
-      date: "Now - Dec 31, 2025",
-      title: "Final Registration Period",
-      description: "Last chance to create your account and join the community",
+      date: "Now - December 31, 2025",
+      title: "Registration Open",
+      description: "Create your account to secure access to the platform",
       icon: Users,
       status: "active",
-      items: ["Open registration", "Instant access", "All features available"]
+      items: ["Registration available", "Instant access", "Full platform features"]
     },
     {
       date: "January 1, 2026",
-      title: "Platform Goes Private",
-      description: "GPL Times becomes an exclusive, members-only community",
+      title: "Private Platform Launch",
+      description: "GPL Times becomes members-only with enhanced features",
       icon: Check,
       status: "upcoming",
-      items: ["Login-only access", "Enhanced security", "Premium experience"]
+      items: ["Login required", "Faster downloads", "Better security"]
     },
     {
-      date: "Special Events Only",
-      title: "Limited Reopenings",
-      description: "Rare opportunities during major sales events",
+      date: "After January 1, 2026",
+      title: "Limited Registration",
+      description: "New signups only during special promotional events",
       icon: Calendar,
       status: "future",
-      items: ["Black Friday", "Cyber Monday", "Special occasions"]
+      items: ["Black Friday only", "Cyber Monday only", "Special events"]
     }
   ];
 
@@ -33,11 +33,11 @@ export const TimelineSection = () => {
     <section className="py-24 bg-gradient-to-br from-background via-secondary/30 to-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-foreground mb-6">
-            The Transformation Timeline
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Important Dates
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Here's exactly what's happening and when - plan your access accordingly
+            Mark your calendar - here's what's happening and when
           </p>
         </div>
         
