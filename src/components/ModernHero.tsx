@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export const ModernHero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-28">
       {/* Dynamic gradient background */}
       <div className="absolute inset-0 bg-gradient-hero">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/30"></div>
