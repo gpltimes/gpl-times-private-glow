@@ -1,5 +1,6 @@
 import { AlertTriangle, CheckCircle, Zap, Lock, Rocket, Shield, Users, Gift, Archive, Clock, Crown, Star, Sparkles } from "lucide-react";
 import { ModernHero } from "@/components/ModernHero";
+import { UserTypeSelector } from "@/components/UserTypeSelector";
 
 import { TimelineSection } from "@/components/TimelineSection";
 import { ModernFeatureCard } from "@/components/ModernFeatureCard";
@@ -10,6 +11,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background overflow-hidden">
       <ModernHero />
+      <UserTypeSelector />
       
       
       {/* What's Changing Section - Modern Cards */}
