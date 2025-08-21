@@ -19,13 +19,6 @@ export const ModernHero = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
-          {/* Enhanced floating badge */}
-          <div className="inline-flex items-center mb-6 md:mb-8 animate-float">
-            <Badge className="px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold bg-white/95 text-primary border-0 shadow-lg backdrop-blur-sm">
-              <Shield className="h-3 w-3 md:h-4 md:w-4 mr-2" />
-              <span className="hidden sm:inline">Going Private • </span>Member Access Only
-            </Badge>
-          </div>
           
           {/* Redesigned main heading with better mobile layout */}
           <div className="mb-8 md:mb-12">
@@ -60,11 +53,12 @@ export const ModernHero = () => {
           </div>
           
           {/* Enhanced description with better readability */}
-          <div className="max-w-4xl mx-auto mb-12 md:mb-16">
-            <p className="text-lg md:text-xl text-white/95 leading-relaxed px-4 animate-slide-up">
-              Transform your WordPress journey with our exclusive private platform. 
-              <span className="hidden md:inline"> Delivering unmatched performance, enterprise-grade security, and premium experiences for serious WordPress professionals.</span>
-              <span className="md:hidden"> Get premium performance and security for WordPress professionals.</span>
+          <div className="max-w-5xl mx-auto mb-12 md:mb-16">
+            <p className="text-xl md:text-2xl text-white/95 leading-relaxed px-4 animate-slide-up font-light">
+              Exclusive member-only access to premium WordPress resources.
+              <span className="hidden md:block mt-2 text-lg text-white/80">
+                Enhanced performance, enterprise security, and priority support for serious WordPress professionals.
+              </span>
             </p>
           </div>
         </div>
