@@ -22,15 +22,6 @@ export const ModernHero = () => {
           
           {/* Redesigned main heading with better mobile layout */}
           <div className="mb-8 md:mb-12">
-            <div className="flex items-center justify-center mb-6 md:mb-8">
-              <div className="relative">
-                <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
-                <div className="relative p-3 md:p-5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-                  <Lock className="h-12 w-12 md:h-20 md:w-20 text-white drop-shadow-lg" />
-                </div>
-              </div>
-            </div>
-            
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight">
               <span className="block">GPL Times</span>
               <span className="block bg-gradient-to-r from-white via-white/90 to-white bg-clip-text text-transparent relative">
