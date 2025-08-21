@@ -1,4 +1,4 @@
-import { Trophy, Calendar, Sparkles, ArrowDown } from "lucide-react";
+import { Lock, Calendar, Shield, ArrowDown } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
@@ -22,8 +22,8 @@ export const ModernHero = () => {
           {/* Enhanced floating badge */}
           <div className="inline-flex items-center mb-6 md:mb-8 animate-float">
             <Badge className="px-4 py-2 md:px-6 md:py-3 text-xs md:text-sm font-semibold bg-white/95 text-primary border-0 shadow-lg backdrop-blur-sm">
-              <Sparkles className="h-3 w-3 md:h-4 md:w-4 mr-2" />
-              <span className="hidden sm:inline">Major Platform Evolution • </span>Exclusive Access
+              <Shield className="h-3 w-3 md:h-4 md:w-4 mr-2" />
+              <span className="hidden sm:inline">Going Private • </span>Member Access Only
             </Badge>
           </div>
           
@@ -33,7 +33,7 @@ export const ModernHero = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
                 <div className="relative p-3 md:p-5 rounded-full bg-white/10 backdrop-blur-sm border border-white/20">
-                  <Trophy className="h-12 w-12 md:h-20 md:w-20 text-white drop-shadow-lg" />
+                  <Lock className="h-12 w-12 md:h-20 md:w-20 text-white drop-shadow-lg" />
                 </div>
               </div>
             </div>
