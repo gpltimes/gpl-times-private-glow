@@ -6,6 +6,7 @@ import { TimelineSection } from "@/components/TimelineSection";
 import { ModernFeatureCard } from "@/components/ModernFeatureCard";
 import { UrgentCTA } from "@/components/UrgentCTA";
 import { ModernContact } from "@/components/ModernContact";
+import { FAQSection } from "@/components/FAQSection";
 
 const Index = () => {
   return (
@@ -95,6 +96,7 @@ const Index = () => {
       </section>
 
       <UrgentCTA />
+      <FAQSection />
       <ModernContact />
     </div>
   );
