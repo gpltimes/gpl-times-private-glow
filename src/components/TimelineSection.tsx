@@ -5,19 +5,19 @@ export const TimelineSection = () => {
   const timelineItems = [
     {
       date: "Now - December 31, 2025",
-      title: "Registration Open",
-      description: "Create your account to secure access to the platform",
+      title: "Public access",
+      description: "Guest users can access the website and register by purchasing",
       icon: Users,
       status: "active",
-      items: ["Registration available", "Instant access", "Full platform features"]
+      items: ["Guest users can access the website", "Guest users can make purchases", "Guest users can register by purchasing"]
     },
     {
       date: "January 1, 2026",
       title: "Private Platform Launch",
-      description: "GPL Times becomes members-only with enhanced features",
+      description: "GPL Times becomes logged in-only with enhanced features",
       icon: Check,
       status: "upcoming",
-      items: ["Login required", "Faster downloads", "Better security"]
+      items: ["Login required", "Faster downloads", "Better security", "Exclusive content"]
     },
     {
       date: "After January 1, 2026",

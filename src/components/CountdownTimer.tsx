@@ -33,10 +33,6 @@ export const CountdownTimer = () => {
   return (
     <div className="max-w-4xl mx-auto mb-8 md:mb-12">
       <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-2xl p-6 md:p-8 shadow-2xl">
-        <div className="text-center mb-6">
-          <h3 className="text-lg md:text-xl font-semibold text-white mb-2">Transition Countdown</h3>
-          <p className="text-white/80 text-sm md:text-base">Time until private access begins</p>
-        </div>
         <div className="grid grid-cols-4 gap-4 text-center">
           <div className="bg-white/20 rounded-lg p-3 md:p-4">
             <div className="text-2xl md:text-3xl font-bold text-white">{timeLeft.days.toString().padStart(2, '0')}</div>

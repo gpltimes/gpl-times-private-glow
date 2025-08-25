@@ -18,7 +18,7 @@ export const UrgentCTA = () => {
               <div className="flex items-center justify-center">
                 <Clock className="h-5 w-5 text-warning-foreground mr-2 animate-pulse" />
                 <span className="text-warning-foreground font-semibold">
-                  Limited Time: Registration Closes December 31, 2025
+                  Limited Time: New Registration Closes December 31, 2025
                 </span>
               </div>
             </div>
