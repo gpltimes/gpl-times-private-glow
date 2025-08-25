@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +18,655 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Modern Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- Dynamic gradient background -->
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <!-- Floating elements -->
+        <div class="floating-elements">
+            <div class="float-element float-1"></div>
+            <div class="float-element float-2"></div>
+            <div class="float-element float-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- Main heading -->
+                <div class="hero-heading">
+                    <h1 class="hero-title">
+                        <span class="title-line">GPL Times</span>
+                        <span class="title-line title-highlight">Going Private</span>
+                    </h1>
+                    
+                    <!-- Subtitle -->
+                    <div class="hero-subtitle">
+                        <div class="subtitle-badge">
+                            <div class="subtitle-content">
+                                <svg class="calendar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                <span class="subtitle-text">
+                                    <span class="hidden-mobile">New Era Begins • </span>January 1, 2026
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div id="countdown" class="countdown-timer">
+                    <div class="countdown-container">
+                        <div class="countdown-grid">
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="days">00</div>
+                                <div class="countdown-label">Days</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="hours">00</div>
+                                <div class="countdown-label">Hours</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="minutes">00</div>
+                                <div class="countdown-label">Minutes</div>
+                            </div>
+                            <div class="countdown-item">
+                                <div class="countdown-number" id="seconds">00</div>
+                                <div class="countdown-label">Seconds</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                <!-- Description -->
+                <div class="hero-description">
+                    <p class="description-text">
+                        Exclusive member-only access to premium WordPress resources.
+                        <span class="description-subtext">
+                            Enhanced performance, enterprise security, and priority support for serious WordPress professionals.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Type Selector -->
+    <section id="user-selector" class="user-selector-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                    What This Means For You
+                </div>
+                <h2 class="section-title">Choose Your Current Status</h2>
+                <p class="section-description">
+                    Select your current status to see exactly what changes apply to you
+                </p>
+            </div>
+
+            <div class="user-cards">
+                <!-- Existing Member Card -->
+                <div class="user-card" id="member-card" onclick="toggleCard('member')">
+                    <div class="card-header">
+                        <div class="card-icon member-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">I'm Already a Member</h3>
+                        <p class="card-description">I have a registered account with GPL Times</p>
+                    </div>
+                    <div class="card-content" id="member-content">
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Your Access Continues</h4>
+                                <p class="benefit-description">Your existing account remains fully active with all current privileges</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Enhanced Experience</h4>
+                                <p class="benefit-description">Enjoy faster speeds, better security, and exclusive content</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">No Action Needed</h4>
+                                <p class="benefit-description">Simply continue using your existing login credentials</p>
+                            </div>
+                        </div>
+                        <div class="member-badge-container">
+                            <div class="member-badge">Member Benefit</div>
+                            <p class="member-note">You're all set! The transition will be seamless for existing members.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guest User Card -->
+                <div class="user-card" id="guest-card" onclick="toggleCard('guest')">
+                    <div class="card-header">
+                        <div class="card-icon guest-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <line x1="17" y1="11" x2="21" y2="11"></line>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">I'm New / Guest User</h3>
+                        <p class="card-description">I don't have an account or browse as a guest</p>
+                    </div>
+                    <div class="card-content" id="guest-content">
+                        <div class="benefit-item warning">
+                            <svg class="warning-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Sign Up Required</h4>
+                                <p class="benefit-description">You'll need to create an account to access the platform after January 1, 2026</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item destructive">
+                            <svg class="clock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">Limited Time to Sign Up</h4>
+                                <p class="benefit-description">Sign up closes permanently on December 31, 2025</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item destructive">
+                            <svg class="lock-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                            <div>
+                                <h4 class="benefit-title">No Guest Access</h4>
+                                <p class="benefit-description">Browsing without an account will no longer be possible</p>
+                            </div>
+                        </div>
+                        <div class="guest-badge-container">
+                            <div class="guest-badge">Action Required</div>
+                            <p class="guest-note">Register now to secure your access before the deadline. Limited special reopenings only on Black Friday.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card-hint" class="card-hint hidden">
+                <p>Click the other option to see what applies to different user types</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Important Dates</h2>
+                <p class="section-description">Mark your calendar - here's what's happening and when</p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Timeline line -->
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-items">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item left active">
+                        <div class="timeline-node active">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date active">Now - December 31, 2025</div>
+                                <h3 class="timeline-title">Public access</h3>
+                                <p class="timeline-description">Guest users can access the website and register by purchasing</p>
+                                <ul class="timeline-features">
+                                    <li>Guest users can access the website</li>
+                                    <li>Guest users can make purchases</li>
+                                    <li>Guest users can register by purchasing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item right upcoming">
+                        <div class="timeline-node upcoming">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date upcoming">January 1, 2026</div>
+                                <h3 class="timeline-title">Restricted Guest Access</h3>
+                                <p class="timeline-description">GPL Times becomes logged in-only with enhanced features</p>
+                                <ul class="timeline-features">
+                                    <li>Login required</li>
+                                    <li>Faster downloads</li>
+                                    <li>Better security</li>
+                                    <li>Exclusive content</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item left future">
+                        <div class="timeline-node future">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-card">
+                                <div class="timeline-date future">After January 1, 2026</div>
+                                <h3 class="timeline-title">Limited Sign Up</h3>
+                                <p class="timeline-description">New signups only during special promotional events</p>
+                                <ul class="timeline-features">
+                                    <li>Black Friday only</li>
+                                    <li>Cyber Monday only</li>
+                                    <li>Special events</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Benefits Section -->
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                    </svg>
+                    Premium Experience
+                </div>
+                <h2 class="section-title">Member Benefits</h2>
+                <p class="section-description">
+                    Discover the exclusive advantages of being a GPL Times member
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+                <!-- Benefit Card 1 -->
+                <div class="benefit-card card-1">
+                    <div class="card-gradient gradient-1"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Lightning Fast Downloads</h3>
+                        <p class="card-description">Experience blazing-fast download speeds with our premium CDN infrastructure designed for WordPress professionals.</p>
+                        <ul class="card-features">
+                            <li>10x faster download speeds</li>
+                            <li>Global CDN network</li>
+                            <li>Zero throttling or limits</li>
+                            <li>Premium bandwidth allocation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit Card 2 -->
+                <div class="benefit-card card-2">
+                    <div class="card-gradient gradient-2"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                <circle cx="12" cy="16" r="1"></circle>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Enhanced Security</h3>
+                        <p class="card-description">Advanced security measures protect your downloads and account with enterprise-grade encryption and monitoring.</p>
+                        <ul class="card-features">
+                            <li>SSL encrypted downloads</li>
+                            <li>Advanced malware scanning</li>
+                            <li>Secure account protection</li>
+                            <li>Privacy-first approach</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Benefit Card 3 -->
+                <div class="benefit-card card-3">
+                    <div class="card-gradient gradient-3"></div>
+                    <div class="card-content">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Exclusive Content</h3>
+                        <p class="card-description">Access premium themes, plugins, and resources available only to registered members of our exclusive community.</p>
+                        <ul class="card-features">
+                            <li>Member-only premium themes</li>
+                            <li>Exclusive plugin collections</li>
+                            <li>Early access to new releases</li>
+                            <li>VIP content library</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9,9a3,3,0,0,1,5.83,1c0,2-3,3-3,3"></path>
+                        <point cx="12" cy="17" r="1"></point>
+                    </svg>
+                    Transition FAQ
+                </div>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-description">Get answers to common questions about GPL Times' transition to private access</p>
+            </div>
+
+            <div class="faq-grid">
+                <!-- General Questions -->
+                <div class="faq-column">
+                    <div class="faq-header">
+                        <div class="faq-icon general">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M9,9a3,3,0,0,1,5.83,1c0,2-3,3-3,3"></path>
+                                <point cx="12" cy="17" r="1"></point>
+                            </svg>
+                        </div>
+                        <h3 class="faq-title">General Questions</h3>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Why is GPL Times going private?</span>
+                                <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="faq-answer">
+                                We're transitioning to a private platform to provide faster downloads, enhanced security, better resource management, premium support, and access to exclusive content exclusively for our community members. This allows us to deliver a superior experience with exclusive resources and features without the limitations of public access.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>When will the change take effect?</span>
+                                <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="faq-answer">
+                                The transition to private access will be effective January 1, 2026. After this date, you'll need an account to access GPL Times and download resources.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Existing Users -->
+                <div class="faq-column">
+                    <div class="faq-header">
+                        <div class="faq-icon existing">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <polyline points="23,11 23,17 23,17"></polyline>
+                                <polyline points="17,13 20,16 17,19"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="faq-title">Existing Users</h3>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Do I need to do anything to maintain access?</span>
+                                <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="faq-answer">
+                                No, existing users don't need to do anything. Your account will continue to work normally after January 1, 2026.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>Will there be new features for existing users?</span>
+                                <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="faq-answer">
+                                Absolutely! Existing users will benefit from faster download speeds, enhanced security, priority support, and early access to new themes and plugins as they become available.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guest Users -->
+                <div class="faq-column">
+                    <div class="faq-header">
+                        <div class="faq-icon guest">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="faq-title">Guest Users</h3>
+                    </div>
+                    <div class="faq-items">
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>How can I create an account?</span>
+                                <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="faq-answer">
+                                Guest users can register an account by purchasing any product from our store. Your account will automatically be created during checkout, giving you instant access to the platform.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">
+                                <span>What if I don't create an account before January 1, 2026?</span>
+                                <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="6,9 12,15 18,9"></polyline>
+                                </svg>
+                            </div>
+                            <div class="faq-answer">
+                                After January 1, 2026, public access will be restricted. However, you can still create an account anytime to gain access. We recommend creating your account before the deadline to ensure uninterrupted access.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgent CTA Section -->
+    <section id="cta" class="cta-section">
+        <!-- Animated background -->
+        <div class="cta-bg">
+            <div class="cta-float-1"></div>
+            <div class="cta-float-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-warning">
+                    <svg class="warning-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12,6 12,12 16,14"></polyline>
+                    </svg>
+                    <span>Limited Time: New Sign Up Closes December 31, 2025</span>
+                </div>
+                
+                <div class="cta-content">
+                    <div class="cta-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    
+                    <h2 class="cta-title">
+                        Register Before
+                        <span class="cta-date">December 31, 2025</span>
+                    </h2>
+                    
+                    <p class="cta-description">
+                        Don't miss out! Create your account now to ensure continued access to GPL Times. 
+                        After December 31st, sign up will only be available during special events.
+                    </p>
+                    
+                    <!-- Stats Grid -->
+                    <div class="stats-grid">
+                        <div class="stat-item stat-1">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2"></polygon>
+                                </svg>
+                            </div>
+                            <div class="stat-number">10x Faster</div>
+                            <div class="stat-label">Download Speeds</div>
+                        </div>
+                        
+                        <div class="stat-item stat-2">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <circle cx="12" cy="16" r="1"></circle>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-number">100% Secure</div>
+                            <div class="stat-label">Private Environment</div>
+                        </div>
+                        
+                        <div class="stat-item stat-3">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="stat-number">Premium</div>
+                            <div class="stat-label">Support & Features</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="cta-buttons">
+                        <a href="https://www.gpltimes.com/membership-plans/" target="_blank" rel="noopener noreferrer" class="cta-button">
+                            <div class="button-bg"></div>
+                            <div class="button-content">
+                                <svg class="button-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                                </svg>
+                                Become Our Member
+                                <svg class="button-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                    <polyline points="12,5 19,12 12,19"></polyline>
+                                </svg>
+                            </div>
+                        </a>
+                        
+                        <div class="cta-warning-text">
+                            <p class="warning-date">After Jan 1, 2026</p>
+                            <p class="warning-text">No New Registrations</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Trust indicators -->
+                    <div class="trust-indicators">
+                        <p class="trust-text">Trusted by WordPress professionals worldwide</p>
+                        <div class="trust-features">
+                            <span>✓ Instant Access</span>
+                            <span>✓ Premium Downloads</span>
+                            <span>✓ Exclusive Content</span>
+                            <span>✓ Regular Updates</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modern Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <p class="contact-text">
+                    Thank you for being part of the GPL Times community. We're committed to providing 
+                    you with the best WordPress resources and support.
+                </p>
+                <p class="contact-signature">— The GPL Times Team</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
