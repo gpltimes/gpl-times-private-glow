@@ -30,46 +30,56 @@ export const TimelineSection = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-br from-background via-secondary/30 to-background">
-      <div className="max-w-[1320px] mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+    <section className="py-16 lg:py-20 bg-gradient-to-br from-background via-secondary/30 to-background">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             Important Dates
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Mark your calendar - here's what's happening and when
           </p>
         </div>
         
         <div className="relative">
-          {/* Timeline line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-primary via-primary/50 to-muted"></div>
+          {/* Timeline line - hidden on mobile, shown on larger screens */}
+          <div className="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-muted"></div>
           
-          <div className="space-y-16">
+          <div className="space-y-8 md:space-y-12">
             {timelineItems.map((item, index) => (
               <div 
                 key={index} 
-                className={`relative flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'} animate-fade-in`}
-                style={{ animationDelay: `${index * 0.2}s` }}
+                className="relative animate-fade-in"
+                style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Timeline node */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 z-10">
-                  <div className={`w-16 h-16 rounded-full flex items-center justify-center shadow-lg ${
-                    item.status === 'active' ? 'bg-primary animate-pulse-glow' :
+                <div className="hidden md:block absolute left-6 top-6 z-10">
+                  <div className={`w-4 h-4 rounded-full border-4 border-background shadow-lg ${
+                    item.status === 'active' ? 'bg-primary' :
                     item.status === 'upcoming' ? 'bg-warning' : 'bg-muted'
-                  }`}>
-                    <item.icon className={`h-8 w-8 ${
-                      item.status === 'active' ? 'text-primary-foreground' :
-                      item.status === 'upcoming' ? 'text-warning-foreground' : 'text-muted-foreground'
-                    }`} />
-                  </div>
+                  }`}></div>
                 </div>
                 
                 {/* Content card */}
-                <div className={`w-5/12 ${index % 2 === 0 ? 'mr-auto pr-16' : 'ml-auto pl-16'}`}>
-                  <Card className="shadow-xl hover:shadow-premium transition-all duration-500 transform hover:-translate-y-2">
-                    <CardContent className="p-8">
-                      <div className="mb-4">
+                <div className="md:ml-20">
+                  <Card className="shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
+                        <div className="flex items-center mb-3 sm:mb-0">
+                          <div className={`w-10 h-10 md:hidden rounded-full flex items-center justify-center mr-3 ${
+                            item.status === 'active' ? 'bg-primary' :
+                            item.status === 'upcoming' ? 'bg-warning' : 'bg-muted'
+                          }`}>
+                            <item.icon className={`h-5 w-5 ${
+                              item.status === 'active' ? 'text-primary-foreground' :
+                              item.status === 'upcoming' ? 'text-warning-foreground' : 'text-muted-foreground'
+                            }`} />
+                          </div>
+                          <h3 className="text-xl md:text-2xl font-bold text-foreground">
+                            {item.title}
+                          </h3>
+                        </div>
+                        
                         <span className={`inline-block px-3 py-1 rounded-full text-sm font-semibold ${
                           item.status === 'active' ? 'bg-primary/10 text-primary' :
                           item.status === 'upcoming' ? 'bg-warning/10 text-warning' : 'bg-muted text-muted-foreground'
@@ -78,22 +88,18 @@ export const TimelineSection = () => {
                         </span>
                       </div>
                       
-                      <h3 className="text-2xl font-bold text-foreground mb-3">
-                        {item.title}
-                      </h3>
-                      
-                      <p className="text-muted-foreground mb-6 leading-relaxed">
+                      <p className="text-muted-foreground mb-4 leading-relaxed">
                         {item.description}
                       </p>
                       
-                      <ul className="space-y-2">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                         {item.items.map((feature, idx) => (
-                          <li key={idx} className="flex items-center">
-                            <div className="w-2 h-2 rounded-full bg-primary mr-3"></div>
-                            <span className="text-foreground">{feature}</span>
-                          </li>
+                          <div key={idx} className="flex items-center">
+                            <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2 flex-shrink-0"></div>
+                            <span className="text-sm text-foreground">{feature}</span>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </CardContent>
                   </Card>
                 </div>
