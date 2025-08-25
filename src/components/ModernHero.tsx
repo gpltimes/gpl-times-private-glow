@@ -5,7 +5,7 @@ import { CountdownTimer } from "@/components/CountdownTimer";
 
 export const ModernHero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-28">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pb-24 md:pb-28 pt-16 md:pt-20">
       {/* Dynamic gradient background */}
       <div className="absolute inset-0 bg-gradient-hero">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/30"></div>
@@ -26,7 +26,7 @@ export const ModernHero = () => {
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight">
               <span className="block">GPL Times</span>
               <span className="block bg-gradient-to-r from-white via-white/90 to-white bg-clip-text text-transparent relative">
-                Goes Private
+                Going Private
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/30 via-white/20 to-primary/30 bg-clip-text text-transparent animate-pulse"></div>
               </span>
             </h1>

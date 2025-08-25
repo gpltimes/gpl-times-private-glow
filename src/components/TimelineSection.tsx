@@ -21,7 +21,7 @@ export const TimelineSection = () => {
     },
     {
       date: "After January 1, 2026",
-      title: "Limited Registration",
+      title: "Limited Sign Up",
       description: "New signups only during special promotional events",
       icon: Calendar,
       status: "future",

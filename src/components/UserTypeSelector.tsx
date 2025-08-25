@@ -98,15 +98,15 @@ export const UserTypeSelector = () => {
                   <div className="flex items-start space-x-3">
                     <AlertTriangle className="h-5 w-5 text-warning mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-foreground">Registration Required</h4>
+                      <h4 className="font-semibold text-foreground">Sign Up Required</h4>
                       <p className="text-muted-foreground text-sm">You'll need to create an account to access the platform after January 1, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">
                     <Clock className="h-5 w-5 text-destructive mt-0.5 flex-shrink-0" />
                     <div>
-                      <h4 className="font-semibold text-foreground">Limited Time to Register</h4>
-                      <p className="text-muted-foreground text-sm">Registration closes permanently on December 31, 2025</p>
+                      <h4 className="font-semibold text-foreground">Limited Time to Sign Up</h4>
+                      <p className="text-muted-foreground text-sm">Sign up closes permanently on December 31, 2025</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">

@@ -18,7 +18,7 @@ export const UrgentCTA = () => {
               <div className="flex items-center justify-center">
                 <Clock className="h-5 w-5 text-warning-foreground mr-2 animate-pulse" />
                 <span className="text-warning-foreground font-semibold">
-                  Limited Time: New Registration Closes December 31, 2025
+                  Limited Time: New Sign Up Closes December 31, 2025
                 </span>
               </div>
             </div>
@@ -35,7 +35,7 @@ export const UrgentCTA = () => {
               
               <p className="text-xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
                 Don't miss out! Create your account now to ensure continued access to GPL Times. 
-                After December 31st, registration will only be available during special events.
+                After December 31st, sign up will only be available during special events.
               </p>
               
               {/* Stats Grid */}
