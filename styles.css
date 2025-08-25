@@ -128,7 +128,27 @@ body {
 
 @keyframes gradient-shift {
     0%, 100% { background-position: 0% 50%; }
+    25% { background-position: 25% 25%; }
     50% { background-position: 100% 50%; }
+    75% { background-position: 75% 75%; }
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes glow-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 20px hsl(201, 76%, 43% / 0.3),
+                    0 0 40px hsl(201, 76%, 43% / 0.1),
+                    inset 0 0 20px hsl(201, 76%, 43% / 0.1);
+    }
+    50% { 
+        box-shadow: 0 0 40px hsl(201, 76%, 43% / 0.6),
+                    0 0 80px hsl(201, 76%, 43% / 0.3),
+                    inset 0 0 40px hsl(201, 76%, 43% / 0.2);
+    }
 }
 
 .animate-fade-in {
@@ -165,6 +185,14 @@ body {
     overflow: hidden;
     padding-bottom: 6rem;
     padding-top: 4rem;
+    background: linear-gradient(135deg, 
+        hsl(201, 76%, 43%) 0%, 
+        hsl(201, 76%, 53%) 25%,
+        hsl(210, 9%, 22%) 75%,
+        hsl(210, 9%, 18%) 100%
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 8s ease infinite;
 }
 
 .hero-background {
@@ -310,12 +338,34 @@ body {
 }
 
 .countdown-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 
+        0 25px 50px -12px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.countdown-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.2), 
+        transparent
+    );
+    animation: shimmer 3s ease-in-out infinite;
 }
 
 .countdown-grid {
@@ -326,15 +376,46 @@ body {
 }
 
 .countdown-item {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 0.5rem;
-    padding: 0.75rem;
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.countdown-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+        90deg, 
+        transparent, 
+        rgba(255, 255, 255, 0.5), 
+        transparent
+    );
 }
 
 .countdown-number {
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 2rem;
+    font-weight: 800;
     color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 1;
 }
 
 .countdown-label {
