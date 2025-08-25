@@ -15,21 +15,6 @@ const Index = () => {
       <UserTypeSelector />
       
       
-      {/* Why We're Making This Change */}
-      <section className="py-20 bg-gradient-to-br from-background via-secondary/10 to-background">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-6 animate-fade-in">
-            <Sparkles className="h-4 w-4 mr-2" />
-            Platform Evolution
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 animate-slide-up">
-            Why We're Going Private
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed animate-slide-up">
-            To deliver faster downloads, stronger security, and a premium experience exclusively for our WordPress community members.
-          </p>
-        </div>
-      </section>
 
       <TimelineSection />
 
@@ -80,13 +65,13 @@ const Index = () => {
             
             <ModernFeatureCard
               icon={<Star className="h-8 w-8 text-warning" />}
-              title="Premium Support"
-              description="Get help from WordPress experts when you need it."
+              title="Exclusive Content"
+              description="Access premium WordPress themes, plugins, and resources not available elsewhere."
               features={[
-                "Dedicated support team",
-                "Faster response times",
-                "WordPress specialists",
-                "Priority assistance"
+                "Premium theme collection",
+                "Advanced plugin library",
+                "Exclusive tutorials",
+                "Member-only resources"
               ]}
               gradient="from-warning/5 to-warning/10"
               delay={0.2}

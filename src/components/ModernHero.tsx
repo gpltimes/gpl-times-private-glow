@@ -1,6 +1,7 @@
 import { Lock, Calendar, Shield, ArrowDown } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { CountdownTimer } from "@/components/CountdownTimer";
 
 export const ModernHero = () => {
   return (
@@ -43,6 +44,8 @@ export const ModernHero = () => {
             </div>
           </div>
           
+          <CountdownTimer />
+
           {/* Enhanced description with better readability */}
           <div className="max-w-5xl mx-auto mb-12 md:mb-16">
             <p className="text-xl md:text-2xl text-white/95 leading-relaxed px-4 animate-slide-up font-light">
