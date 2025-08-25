@@ -8,7 +8,7 @@ export const UserTypeSelector = () => {
 
   return (
     <section className="py-24 bg-gradient-to-br from-background via-secondary/20 to-background">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-6 animate-fade-in">
             <Users className="h-4 w-4 mr-2" />

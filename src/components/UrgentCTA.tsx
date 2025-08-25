@@ -11,7 +11,7 @@ export const UrgentCTA = () => {
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-primary/8 rounded-full blur-2xl animate-float" style={{ animationDelay: '1.5s' }}></div>
       </div>
       
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
+      <div className="relative z-10 max-w-[1320px] mx-auto px-6">
         <Card className="shadow-premium animate-scale-in overflow-hidden">
           <CardContent className="p-0">
             <div className="bg-gradient-to-r from-warning via-warning/90 to-warning p-2">

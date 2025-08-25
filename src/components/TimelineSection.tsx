@@ -31,7 +31,7 @@ export const TimelineSection = () => {
 
   return (
     <section className="py-24 bg-gradient-to-br from-background via-secondary/30 to-background">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             Important Dates

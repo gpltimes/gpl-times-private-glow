@@ -18,14 +18,14 @@ export const ModernHero = () => {
         <div className="absolute top-1/3 left-1/4 w-48 h-48 md:w-64 md:h-64 bg-primary/10 rounded-full blur-2xl animate-float" style={{ animationDelay: '2s' }}></div>
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           
           {/* Redesigned main heading with better mobile layout */}
           <div className="mb-8 md:mb-12">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-display font-bold text-white mb-4 md:mb-6 leading-tight tracking-tight">
               <span className="block">GPL Times</span>
-              <span className="block bg-gradient-to-r from-white via-white/90 to-white bg-clip-text text-transparent relative">
+              <span className="block bg-gradient-to-r from-white via-white/90 to-white bg-clip-text text-transparent relative mb-2">
                 Going Private
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/30 via-white/20 to-primary/30 bg-clip-text text-transparent animate-pulse"></div>
               </span>

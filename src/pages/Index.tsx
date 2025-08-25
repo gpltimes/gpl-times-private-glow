@@ -20,7 +20,7 @@ const Index = () => {
 
       {/* Benefits Section - Simplified */}
       <section className="py-20 bg-gradient-to-br from-secondary/20 via-background to-secondary/10">
-        <div className="max-w-7xl mx-auto px-6">
+        <div className="max-w-[1320px] mx-auto px-6">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 rounded-full bg-success/10 text-success font-semibold mb-6 animate-fade-in">
               <Crown className="h-4 w-4 mr-2" />

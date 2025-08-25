@@ -5,10 +5,10 @@ import { Button } from "@/components/ui/button";
 export const ModernContact = () => {
   return (
     <section className="py-12 bg-gradient-to-br from-muted/30 via-background to-secondary/20">
-      <div className="max-w-5xl mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto px-6">
         {/* Team signature */}
         <div className="text-center">
-          <Card className="inline-block shadow-md">
+          <Card className="w-full shadow-md">
             <CardContent className="p-6">
               <p className="text-muted-foreground mb-2">
                 Thank you for being part of the GPL Times community. We're committed to providing 

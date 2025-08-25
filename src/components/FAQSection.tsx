@@ -15,10 +15,6 @@ export const FAQSection = () => {
     {
       question: "When will the change take effect?",
       answer: "The transition to private access will be effective January 1, 2026. After this date, you'll need an account to access GPL Times and download resources."
-    },
-    {
-      question: "Will there be any costs involved?",
-      answer: "We're committed to keeping GPL Times accessible. Pricing details and membership options will be announced soon, but we're working to ensure affordability for our community."
     }
   ];
 
@@ -46,7 +42,7 @@ export const FAQSection = () => {
 
   return (
     <section className="py-20 bg-gradient-to-br from-muted/30 via-background to-muted/20">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[1320px] mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-6 animate-fade-in">
             <HelpCircle className="h-4 w-4 mr-2" />
@@ -140,28 +136,6 @@ export const FAQSection = () => {
           </div>
         </div>
 
-        {/* Additional Help Section */}
-        <div className="mt-16 text-center">
-          <div className="max-w-2xl mx-auto p-8 rounded-2xl bg-primary/5 border border-primary/10">
-            <Shield className="h-12 w-12 text-primary mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-foreground mb-4">Still Have Questions?</h3>
-            <p className="text-muted-foreground mb-6">
-              Our support team is here to help you through the transition. Don't hesitate to reach out with any concerns.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="mailto:support@gpltimes.com" 
-                className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
-              >
-                Contact Support
-              </a>
-              <div className="flex items-center justify-center text-sm text-muted-foreground">
-                <Clock className="h-4 w-4 mr-2" />
-                Response within 24 hours
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
