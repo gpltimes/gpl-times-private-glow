@@ -32,7 +32,7 @@ export const ModernHero = () => {
             </h1>
             
             {/* Mobile-optimized subtitle */}
-            <div className="inline-block">
+            <div className="inline-block mt-4">
               <div className="px-4 py-2 md:px-6 md:py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/30 shadow-lg">
                 <div className="flex items-center justify-center text-white">
                   <Calendar className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />

@@ -67,18 +67,20 @@ export const UrgentCTA = () => {
               
               {/* CTA Buttons */}
               <div className="flex flex-col lg:flex-row gap-4 md:gap-6 justify-center items-center">
+                <a href="https://www.gpltimes.com/membership-plans/" target="_blank" rel="noopener noreferrer">
                   <Button 
-                  variant="cta"
-                  size="lg" 
-                  className="w-full sm:w-auto text-lg md:text-xl px-10 md:px-14 py-5 md:py-6 shadow-xl hover:shadow-glow transition-all duration-300 font-bold relative overflow-hidden group"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary opacity-100 group-hover:opacity-90 transition-opacity duration-300"></div>
-                  <div className="relative flex items-center">
-                    <Star className="h-5 w-5 md:h-6 md:w-6 mr-2 md:mr-3 animate-pulse" />
-                    Create Account Now
-                    <ArrowRight className="h-5 w-5 md:h-6 md:w-6 ml-2 md:ml-3" />
-                  </div>
-                </Button>
+                    variant="cta"
+                    size="lg" 
+                    className="w-full sm:w-auto text-lg md:text-xl px-10 md:px-14 py-5 md:py-6 shadow-xl hover:shadow-glow transition-all duration-300 font-bold relative overflow-hidden group"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-primary opacity-100 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <div className="relative flex items-center">
+                      <Star className="h-5 w-5 md:h-6 md:w-6 mr-2 md:mr-3 animate-pulse" />
+                      Become Our Member
+                      <ArrowRight className="h-5 w-5 md:h-6 md:w-6 ml-2 md:ml-3" />
+                    </div>
+                  </Button>
+                </a>
                 
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground mb-1">
@@ -96,7 +98,7 @@ export const UrgentCTA = () => {
                 <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
                   <span>✓ Instant Access</span>
                   <span>✓ Premium Downloads</span>
-                  <span>✓ Community Support</span>
+                  <span>✓ Exclusive Content</span>
                   <span>✓ Regular Updates</span>
                 </div>
               </div>
