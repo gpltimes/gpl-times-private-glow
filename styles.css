@@ -1,77 +1,70 @@
-/* Custom Styles for Enhanced Design */
+/* Enhanced Styles with Poppins Font Only */
 
-/* Keyframes for custom animations */
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Floating animations */
+.float-1, .float-2, .float-3 {
+    animation: float 6s ease-in-out infinite;
+}
+
+.float-2 {
+    animation-delay: 2s;
+}
+
+.float-3 {
+    animation-delay: 4s;
+}
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
 }
 
-@keyframes glow {
-    from { box-shadow: 0 0 20px #3b82f6; }
-    to { box-shadow: 0 0 30px #3b82f6, 0 0 40px #3b82f6; }
-}
-
-@keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-@keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Custom glassmorphism effects */
-.glass {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Enhanced hover effects for cards */
-.user-type-card {
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.user-type-card:hover {
-    transform: translateY(-8px);
-}
-
+/* Enhanced card hover effects */
 .user-type-card.active {
     transform: translateY(-4px);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     border-color: #3b82f6;
 }
 
-/* Custom text gradients */
-.gradient-text {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-}
-
-/* Enhanced button styles */
-.btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border: none;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 12px;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-}
-
-.btn-primary:hover {
+.timeline-card:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px);
+}
+
+/* FAQ Enhancements */
+.faq-item.active .faq-question svg {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
 }
 
 /* Custom scrollbar */
@@ -80,7 +73,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -92,49 +85,43 @@ html {
     background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
 }
 
-/* Loading animations */
-.animate-in {
-    animation: slideInUp 0.6s ease-out forwards;
-}
-
-@keyframes slideInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Custom focus styles */
+/* Focus styles for accessibility */
 *:focus {
     outline: 2px solid #3b82f6;
     outline-offset: 2px;
 }
 
-/* Enhanced mobile responsiveness */
-@media (max-width: 640px) {
-    .container {
-        padding-left: 1rem;
-        padding-right: 1rem;
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .timeline-item {
+        flex-direction: column;
+        text-align: center;
     }
     
-    .font-playfair {
+    .timeline-node {
+        position: static;
+        margin: 0 auto 1rem;
+    }
+    
+    .hero-heading h1 {
+        font-size: 2.5rem !important;
         line-height: 1.2;
     }
     
-    .text-5xl {
-        font-size: 2.5rem;
+    .countdown-grid {
+        gap: 0.5rem;
     }
     
-    .text-6xl {
-        font-size: 3rem;
+    .countdown-item {
+        padding: 0.75rem;
+    }
+    
+    .countdown-number {
+        font-size: 1.5rem !important;
     }
 }
 
-/* Improved accessibility */
+/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
@@ -143,18 +130,42 @@ html {
     }
 }
 
-/* High contrast mode support */
-@media (prefers-contrast: high) {
-    .bg-white\/10 {
-        background-color: rgba(255, 255, 255, 0.9) !important;
-    }
-    
-    .text-white\/80 {
-        color: white !important;
-    }
+/* Loading state */
+.loading * {
+    animation-play-state: paused !important;
 }
 
-/* Dark mode support preparation */
-@media (prefers-color-scheme: dark) {
-    /* Will be implemented if needed */
+/* Button enhancements */
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Timeline mobile improvements */
+@media (max-width: 640px) {
+    .timeline {
+        padding-left: 0;
+    }
+    
+    .timeline-item {
+        padding-left: 0;
+        border-left: none;
+    }
+    
+    .timeline-header .flex {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .timeline-header .flex > div:first-child {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
 }
