@@ -15,7 +15,7 @@ export const UserTypeSelector = () => {
             What This Means For You
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-foreground mb-6 animate-slide-up">
-            Choose Your Status
+            Choose Your Current Status
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto animate-slide-up">
             Select your current status to see exactly what changes apply to you

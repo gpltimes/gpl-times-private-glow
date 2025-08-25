@@ -25,7 +25,7 @@ export const FAQSection = () => {
     },
     {
       question: "Will there be new features for existing members?",
-      answer: "Absolutely! Existing members will benefit from faster download speeds, enhanced security, priority support, and early access to new themes and plugins as they become available."
+      answer: "Absolutely! Existing users will benefit from faster download speeds, enhanced security, priority support, and early access to new themes and plugins as they become available."
     }
   ];
 
@@ -89,7 +89,7 @@ export const FAQSection = () => {
               <div className="p-2 rounded-lg bg-success/10">
                 <UserCheck className="h-5 w-5 text-success" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Existing Members</h3>
+              <h3 className="text-xl font-semibold text-foreground">Existing Users</h3>
             </div>
             <Accordion type="single" collapsible className="space-y-4">
               {existingUserFAQs.map((faq, index) => (

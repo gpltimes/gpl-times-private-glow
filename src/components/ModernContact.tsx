@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export const ModernContact = () => {
   return (
-    <section className="py-12 bg-gradient-to-br from-muted/30 via-background to-secondary/20">
+    <section className="py-16 bg-gradient-to-br from-primary/5 via-background to-primary/10">
       <div className="max-w-[1320px] mx-auto px-6">
         {/* Team signature */}
         <div className="text-center">
