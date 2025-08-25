@@ -80,8 +80,8 @@ const Index = () => {
         </div>
       </section>
 
-      <UrgentCTA />
       <FAQSection />
+      <UrgentCTA />
       <ModernContact />
     </div>
   );
