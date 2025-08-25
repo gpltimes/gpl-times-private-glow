@@ -154,6 +154,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Interactive glow follow for user-type cards
+    const glowCards = document.querySelectorAll('.user-type-card');
+    glowCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            card.style.setProperty('--x', x + 'px');
+            card.style.setProperty('--y', y + 'px');
+        });
+    });
+
     // Add parallax effect to floating elements
     let ticking = false;
 
