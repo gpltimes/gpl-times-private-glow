@@ -53,7 +53,7 @@ export const UserTypeSelector = () => {
                     <CheckCircle className="h-5 w-5 text-success mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold text-foreground">Enhanced Experience</h4>
-                      <p className="text-muted-foreground text-sm">Enjoy faster speeds, better security, and premium features</p>
+                      <p className="text-muted-foreground text-sm">Enjoy faster speeds, better security, and exclusive content</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-3">

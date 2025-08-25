@@ -10,7 +10,7 @@ export const FAQSection = () => {
   const generalFAQs = [
     {
       question: "Why is GPL Times going private?",
-      answer: "We're transitioning to a private platform to provide faster downloads, enhanced security, better resource management, and premium support exclusively for our community members. This allows us to deliver a superior experience without the limitations of public access."
+      answer: "We're transitioning to a private platform to provide faster downloads, enhanced security, better resource management, premium support, and access to exclusive content exclusively for our community members. This allows us to deliver a superior experience with exclusive resources and features without the limitations of public access."
     },
     {
       question: "When will the change take effect?",
@@ -19,48 +19,28 @@ export const FAQSection = () => {
     {
       question: "Will there be any costs involved?",
       answer: "We're committed to keeping GPL Times accessible. Pricing details and membership options will be announced soon, but we're working to ensure affordability for our community."
-    },
-    {
-      question: "What happens to existing downloads and resources?",
-      answer: "All existing resources will remain available to members. In fact, you'll get faster download speeds and improved access to the complete library of WordPress themes, plugins, and resources."
     }
   ];
 
   const existingUserFAQs = [
     {
       question: "Do I need to do anything to maintain access?",
-      answer: "If you already have an account with GPL Times, you'll automatically retain access after January 1, 2026. Just ensure your account credentials are up to date and accessible."
-    },
-    {
-      question: "Will my download history be preserved?",
-      answer: "Yes, all your previous downloads, favorites, and account history will be fully preserved. You'll continue to have access to everything you've downloaded before."
+      answer: "No, existing users don't need to do anything. Your account will continue to work normally after January 1, 2026."
     },
     {
       question: "Will there be new features for existing members?",
       answer: "Absolutely! Existing members will benefit from faster download speeds, enhanced security, priority support, and early access to new themes and plugins as they become available."
-    },
-    {
-      question: "How will I be notified of important updates?",
-      answer: "We'll send email notifications to your registered email address for important updates, new features, and any changes to the platform. Make sure your email preferences are set correctly in your account."
     }
   ];
 
   const guestUserFAQs = [
     {
       question: "How can I create an account?",
-      answer: "You can create a free account by visiting our registration page. The process is simple and only takes a few minutes. We'll guide you through the setup to ensure you have full access before January 2026."
+      answer: "Guest users can register an account by purchasing any product from our store. Your account will automatically be created during checkout, giving you instant access to the platform."
     },
     {
       question: "What if I don't create an account before January 1, 2026?",
       answer: "After January 1, 2026, public access will be restricted. However, you can still create an account anytime to gain access. We recommend creating your account before the deadline to ensure uninterrupted access."
-    },
-    {
-      question: "Is account creation really free?",
-      answer: "Yes, creating an account is completely free. You'll gain immediate access to faster downloads, better security, and our complete library of WordPress resources without any initial cost."
-    },
-    {
-      question: "What information do I need to provide?",
-      answer: "Account creation requires basic information: your email address, a secure password, and optionally your name for personalization. We respect your privacy and only collect necessary information."
     }
   ];
 

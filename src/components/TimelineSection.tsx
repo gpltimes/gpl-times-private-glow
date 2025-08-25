@@ -13,7 +13,7 @@ export const TimelineSection = () => {
     },
     {
       date: "January 1, 2026",
-      title: "Private Platform Launch",
+      title: "Restricted Guest Access",
       description: "GPL Times becomes logged in-only with enhanced features",
       icon: Check,
       status: "upcoming",
