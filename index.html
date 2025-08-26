@@ -22,7 +22,588 @@
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Announcement Banner -->
+    <div class="announcement-banner">
+        <div class="announcement-content">
+            <div class="announcement-text">
+                🚨 GPL Times is transitioning to a private, members-only platform effective January 1, 2026 🚨
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-container">
+            <!-- Background Elements -->
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-bg-pattern"></div>
+            
+            <!-- Content -->
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-text">🎯 GPL Times Private Transition</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="hero-title-line">GPL Times is</span>
+                    <span class="hero-title-highlight">Going Private</span>
+                    <span class="hero-title-line">January 1, 2026</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    After years of providing free access to WordPress plugins and themes, we're transitioning to an exclusive, account-only platform. Join our premium community and experience enhanced security, faster downloads, and exclusive content.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large" onclick="document.querySelector('.user-type-section').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-text">Join the Community</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button class="btn btn-outline btn-large" onclick="document.querySelector('.timeline-section').scrollIntoView({behavior: 'smooth'})">
+                        <span class="btn-text">View Timeline</span>
+                        <span class="btn-icon">📅</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" onclick="document.querySelector('.countdown-section').scrollIntoView({behavior: 'smooth'})">
+                <div class="scroll-text">Scroll to explore</div>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Countdown Timer Section -->
+    <section class="countdown-section">
+        <div class="countdown-container">
+            <div class="countdown-content">
+                <h2 class="countdown-title">Time Until Private Launch</h2>
+                <p class="countdown-subtitle">Get ready for an exclusive WordPress GPL experience</p>
+                
+                <div class="countdown-timer">
+                    <div class="time-block">
+                        <span class="time-value" id="days">00</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="time-value" id="hours">00</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="time-value" id="minutes">00</span>
+                        <span class="time-label">Minutes</span>
+                    </div>
+                    <div class="time-block">
+                        <span class="time-value" id="seconds">00</span>
+                        <span class="time-label">Seconds</span>
+                    </div>
+                </div>
+                
+                <div class="countdown-cta">
+                    <p class="countdown-cta-text">Don't miss out on exclusive access!</p>
+                    <button class="btn btn-secondary" onclick="document.querySelector('.user-type-section').scrollIntoView({behavior: 'smooth'})">
+                        Secure Your Spot Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- User Type Selection -->
+    <section class="user-type-section">
+        <div class="user-type-container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Path</h2>
+                <p class="section-subtitle">Select your current status to see what's available for you</p>
+            </div>
+            
+            <div class="user-type-cards">
+                <div class="user-card existing-member" onclick="showContent('existing')">
+                    <div class="user-card-icon">👤</div>
+                    <h3 class="user-card-title">Existing Member</h3>
+                    <p class="user-card-description">Already have an account? See what's changing for you.</p>
+                    <div class="user-card-badge">Current User</div>
+                </div>
+                
+                <div class="user-card new-user" onclick="showContent('guest')">
+                    <div class="user-card-icon">🚀</div>
+                    <h3 class="user-card-title">New User</h3>
+                    <p class="user-card-description">New to GPL Times? Learn how to join our community.</p>
+                    <div class="user-card-badge">Get Access</div>
+                </div>
+            </div>
+            
+            <!-- Content Sections -->
+            <div id="existing-content" class="content-section hidden">
+                <div class="content-card">
+                    <h3 class="content-title">For Existing Members</h3>
+                    <div class="content-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">✅</span>
+                            <span class="benefit-text">Your account remains active automatically</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">⚡</span>
+                            <span class="benefit-text">Faster download speeds and priority access</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🔒</span>
+                            <span class="benefit-text">Enhanced security and privacy</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🎁</span>
+                            <span class="benefit-text">Exclusive content and early access to new releases</span>
+                        </div>
+                    </div>
+                    <div class="content-action">
+                        <button class="btn btn-primary">
+                            Login to Your Account
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="guest-content" class="content-section hidden">
+                <div class="content-card">
+                    <h3 class="content-title">For New Users</h3>
+                    <div class="content-benefits">
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📝</span>
+                            <span class="benefit-text">Quick and easy registration process</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">🆓</span>
+                            <span class="benefit-text">Free account creation with immediate access</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">📚</span>
+                            <span class="benefit-text">Access to our complete GPL library</span>
+                        </div>
+                        <div class="benefit-item">
+                            <span class="benefit-icon">💬</span>
+                            <span class="benefit-text">Join our community forums and discussions</span>
+                        </div>
+                    </div>
+                    <div class="content-action">
+                        <button class="btn btn-primary">
+                            Create Free Account
+                        </button>
+                        <button class="btn btn-outline">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section class="benefits-section">
+        <div class="benefits-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Go Private?</h2>
+                <p class="section-subtitle">Discover the advantages of our exclusive community</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3 class="benefit-title">Lightning Fast</h3>
+                    <p class="benefit-description">Experience blazing-fast download speeds with our optimized servers and reduced traffic.</p>
+                    <div class="benefit-features">
+                        <li>10x faster downloads</li>
+                        <li>Priority server access</li>
+                        <li>Optimized delivery network</li>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3 class="benefit-title">Enhanced Security</h3>
+                    <p class="benefit-description">Advanced security measures protect your data and ensure safe, malware-free downloads.</p>
+                    <div class="benefit-features">
+                        <li>Regular security scans</li>
+                        <li>Encrypted file transfers</li>
+                        <li>Verified safe downloads</li>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎁</div>
+                    <h3 class="benefit-title">Exclusive Content</h3>
+                    <p class="benefit-description">Access premium plugins, themes, and resources available only to our private members.</p>
+                    <div class="benefit-features">
+                        <li>Member-only releases</li>
+                        <li>Early access to updates</li>
+                        <li>Exclusive tutorials</li>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">💬</div>
+                    <h3 class="benefit-title">Premium Support</h3>
+                    <p class="benefit-description">Get personalized help from our expert team and connect with fellow WordPress professionals.</p>
+                    <div class="benefit-features">
+                        <li>Priority support tickets</li>
+                        <li>Community forums</li>
+                        <li>Expert consultations</li>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">📊</div>
+                    <h3 class="benefit-title">Better Experience</h3>
+                    <p class="benefit-description">Enjoy a cleaner, more organized platform designed specifically for our valued members.</p>
+                    <div class="benefit-features">
+                        <li>Streamlined interface</li>
+                        <li>Advanced search features</li>
+                        <li>Personalized recommendations</li>
+                    </div>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3 class="benefit-title">Quality Focus</h3>
+                    <p class="benefit-description">Curated content ensures every plugin and theme meets our high standards for quality and performance.</p>
+                    <div class="benefit-features">
+                        <li>Quality-tested releases</li>
+                        <li>Regular updates</li>
+                        <li>Performance optimized</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section">
+        <div class="timeline-container">
+            <div class="section-header">
+                <h2 class="section-title">Important Dates</h2>
+                <p class="section-subtitle">Stay informed about our transition timeline</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">✅</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 1, 2025</div>
+                        <h3 class="timeline-title">Announcement Phase</h3>
+                        <p class="timeline-description">Official announcement of the transition to private access. Information campaigns begin across all channels.</p>
+                        <div class="timeline-status completed">Completed</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item active">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">⏳</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 1-31, 2025</div>
+                        <h3 class="timeline-title">Registration Period</h3>
+                        <p class="timeline-description">Open registration for new members. Existing users can update their profiles and prepare for the transition.</p>
+                        <div class="timeline-status active">In Progress</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🔄</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">December 25-31, 2025</div>
+                        <h3 class="timeline-title">System Migration</h3>
+                        <p class="timeline-description">Backend systems upgrade to support the new private platform. Some temporary service interruptions may occur.</p>
+                        <div class="timeline-status upcoming">Upcoming</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">🚀</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 1, 2026</div>
+                        <h3 class="timeline-title">Private Launch</h3>
+                        <p class="timeline-description">GPL Times officially becomes a private, members-only platform. Enhanced features and exclusive content go live.</p>
+                        <div class="timeline-status upcoming">Launch Day</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-cta">
+                <div class="timeline-cta-content">
+                    <h3 class="timeline-cta-title">Ready to Join?</h3>
+                    <p class="timeline-cta-description">Don't wait until the last minute. Secure your access today!</p>
+                    <button class="btn btn-primary">
+                        Create Account Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about the transition</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">Why is GPL Times going private?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We're transitioning to a private model to provide better service quality, enhanced security, faster downloads, and exclusive content. This allows us to focus on delivering premium value to our dedicated community members.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">Will existing users lose access?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No! All existing users will automatically maintain their access. Your account will be seamlessly transitioned to the new private platform with all your previous downloads and preferences intact.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">Is there a cost to join?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Account creation remains completely free! We believe in maintaining accessibility while providing premium features. There are no hidden fees or subscription costs.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">What happens to anonymous browsing?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>After January 1, 2026, all access will require a registered account. Anonymous browsing will no longer be available as we focus on providing personalized experiences for our members.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">What new features can I expect?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Expect faster download speeds, enhanced security, exclusive content, premium support, advanced search features, personalized recommendations, and access to member-only tutorials and resources.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">How do I prepare for the transition?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>If you're an existing user, ensure your account details are up to date. New users should create an account before January 1, 2026. Consider bookmarking important resources and downloading frequently needed files.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">Will the content library change?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our existing library will remain available, plus we'll be adding exclusive content, premium plugins, themes, and resources available only to private members. Quality and variety will both improve significantly.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span class="faq-question-text">What if I need help during the transition?</span>
+                            <span class="faq-toggle">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our support team will be available throughout the transition period. Contact us via email, and we'll assist with any account issues, questions, or concerns you may have.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="final-cta-container">
+            <div class="final-cta-content">
+                <div class="final-cta-badge">
+                    <span class="final-cta-badge-text">🎯 Limited Time</span>
+                </div>
+                
+                <h2 class="final-cta-title">
+                    Secure Your Exclusive Access
+                </h2>
+                
+                <p class="final-cta-subtitle">
+                    Join thousands of WordPress professionals who are already part of our exclusive community. Don't miss out on the enhanced GPL Times experience.
+                </p>
+                
+                <div class="final-cta-features">
+                    <div class="final-cta-feature">
+                        <span class="final-cta-feature-icon">⚡</span>
+                        <span class="final-cta-feature-text">Instant Access</span>
+                    </div>
+                    <div class="final-cta-feature">
+                        <span class="final-cta-feature-icon">🆓</span>
+                        <span class="final-cta-feature-text">Free Account</span>
+                    </div>
+                    <div class="final-cta-feature">
+                        <span class="final-cta-feature-icon">🔒</span>
+                        <span class="final-cta-feature-text">Enhanced Security</span>
+                    </div>
+                </div>
+                
+                <div class="final-cta-actions">
+                    <button class="btn btn-primary btn-large">
+                        <span class="btn-text">Create Free Account</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button class="btn btn-outline btn-large">
+                        <span class="btn-text">Learn More</span>
+                        <span class="btn-icon">ℹ️</span>
+                    </button>
+                </div>
+                
+                <div class="final-cta-trust">
+                    <p class="final-cta-trust-text">Trusted by 50,000+ WordPress professionals worldwide</p>
+                </div>
+            </div>
+            
+            <!-- Background Effects -->
+            <div class="final-cta-bg-gradient"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-content">
+                <h2 class="contact-title">Need Help or Have Questions?</h2>
+                <p class="contact-subtitle">Our team is here to assist you during the transition</p>
+                
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-method-icon">📧</div>
+                        <div class="contact-method-content">
+                            <h3 class="contact-method-title">Email Support</h3>
+                            <p class="contact-method-description">Get in touch with our support team</p>
+                            <a href="mailto:support@gpltimes.com" class="contact-method-link">support@gpltimes.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-method-icon">💬</div>
+                        <div class="contact-method-content">
+                            <h3 class="contact-method-title">Community Forum</h3>
+                            <p class="contact-method-description">Connect with other community members</p>
+                            <a href="#" class="contact-method-link">Join Discussion</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-method-icon">📚</div>
+                        <div class="contact-method-content">
+                            <h3 class="contact-method-title">Help Center</h3>
+                            <p class="contact-method-description">Browse our comprehensive guides</p>
+                            <a href="#" class="contact-method-link">View Resources</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-note">
+                    <p class="contact-note-text">
+                        <strong>Response Time:</strong> We typically respond to all inquiries within 24 hours during the transition period.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-brand-title">GPL Times</h3>
+                    <p class="footer-brand-description">
+                        Your trusted source for WordPress GPL plugins and themes. Transitioning to an exclusive community experience.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Platform</h4>
+                        <a href="#" class="footer-link">Browse Plugins</a>
+                        <a href="#" class="footer-link">Browse Themes</a>
+                        <a href="#" class="footer-link">Categories</a>
+                        <a href="#" class="footer-link">New Releases</a>
+                    </div>
+                    
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Community</h4>
+                        <a href="#" class="footer-link">Create Account</a>
+                        <a href="#" class="footer-link">Member Login</a>
+                        <a href="#" class="footer-link">Forums</a>
+                        <a href="#" class="footer-link">Support</a>
+                    </div>
+                    
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Resources</h4>
+                        <a href="#" class="footer-link">FAQ</a>
+                        <a href="#" class="footer-link">Tutorials</a>
+                        <a href="#" class="footer-link">Documentation</a>
+                        <a href="#" class="footer-link">Blog</a>
+                    </div>
+                    
+                    <div class="footer-link-group">
+                        <h4 class="footer-link-title">Legal</h4>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">GPL License</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright">
+                        © 2025 GPL Times. All rights reserved. Transitioning to private access January 1, 2026.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="footer-social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="footer-social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="footer-social-link" aria-label="GitHub">🐙</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
   </body>
 </html>
